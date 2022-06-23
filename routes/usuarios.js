@@ -9,9 +9,5 @@ const {getUsuarios} = require('../controllers/usurios')
 var cors = require('cors')
 
 const router = Router();
-
 router.get('/', getUsuarios);
-
-
-
 module.exports = router;
