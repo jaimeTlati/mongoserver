@@ -1,7 +1,7 @@
 
 const { response } = require('express');
 
-const { db, client } = require('../database/conecc_mongo');
+const { db } = require('../database/conecc_mongo');
 
 const getUsuarios = async (req, res = response) => {
 
@@ -13,7 +13,6 @@ const getUsuarios = async (req, res = response) => {
 
         })
     }
-
     else
        { 
         const collection = db.collection('Usuario');
@@ -24,10 +23,6 @@ const getUsuarios = async (req, res = response) => {
             usuario
         })
     }
-
-
-
-
 }
 
 module.exports = {
