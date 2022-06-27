@@ -1,6 +1,5 @@
 // const { parse } = require('dotenv');
 const { response } = require('express');
-const { Collection } = require('mongoose');
 
 const { db } = require('../../database/conecc_mongo');
 
